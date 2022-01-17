@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import landerCardReducer from '../features/common/cards/landerCard/landerCardSlice';
+import recipesListReducer from '../features/views/recipeList/recipeListSlice'
 
 export const store = configureStore({
   reducer: {
     landerCard: landerCardReducer,
+    recipesList: recipesListReducer,
   },
 });
 
