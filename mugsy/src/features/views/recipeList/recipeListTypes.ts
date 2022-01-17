@@ -1,8 +1,8 @@
 export interface IRecipesListState {
-  value: IRecipeData[] | undefined,
+  value: IRecipeListItem[] | undefined,
 }
 
-export interface IRecipeData {
+export interface IRecipeListItem {
   recipeId: number;
   recipeSource: string;
   weight: string;
