@@ -27,6 +27,6 @@ export const landerCardSlice = createSlice({
 export const {
   landerCard, setLanderCard, resetLanderCard,
 } = landerCardSlice.actions;
-export const getLanderCard = (state: RootState): ILanderCardData | undefined => state.landerCard.value;
+export const getLanderCard = (state: RootState): ILanderCardData[] | undefined => state.landerCard.value;
 
 export default landerCardSlice.reducer;

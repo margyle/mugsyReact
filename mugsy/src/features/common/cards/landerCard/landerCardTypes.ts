@@ -1,5 +1,5 @@
 export interface ILanderCardState {
-  value: ILanderCardData | undefined,
+  value: ILanderCardData[] | undefined,
 }
 
 export interface ILanderCardData {
