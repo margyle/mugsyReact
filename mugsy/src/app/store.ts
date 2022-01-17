@@ -1,8 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import landerCardReducer from '../features/common/cards/landerCard/landerCardSlice';
 
 export const store = configureStore({
   reducer: {
-
+    landerCard: landerCardReducer,
   },
 });
 
