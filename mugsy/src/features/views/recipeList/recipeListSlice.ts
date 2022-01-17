@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../../../app/store';
-import { IRecipesListState, IRecipeData } from './recipeListTypes';
+import { IRecipesListState, IRecipeListItem } from './recipeListTypes';
 
 const initialState: IRecipesListState = {
   value: undefined,
@@ -27,6 +27,6 @@ export const recipesListSlice = createSlice({
 export const {
   recipesList, setRecipesList, resetRecipesList,
 } = recipesListSlice.actions;
-export const getLanderCard = (state: RootState): IRecipeData[] | undefined => state.recipesList.value;
+export const getRecipeList = (state: RootState): IRecipeListItem[] | undefined => state.recipesList.value;
 
 export default recipesListSlice.reducer;
