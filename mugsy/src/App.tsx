@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { DefaultContainer } from './features/common/container/DefaultContainer';
+import { recipesList } from './features/views/recipeList/recipeListSlice';
+
 
 
 export const App: React.FC = () => {
   return (
-    <div>
-      Hello
+    <div className="mainContainer">
+
       <DefaultContainer />
 
 

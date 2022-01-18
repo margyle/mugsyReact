@@ -1,19 +1,20 @@
 import { BrowserRouter } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import styles from './landerCard.module.scss';
 
 export const LanderCard: React.FC = () => {
   return (
     <div>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="./holder.png" />
-        <Card.Body>
-          <Card.Title></Card.Title>
+      <Card className="shadow sm">
+        <Card.Body className={styles.cardContainer}>
+          <Card.Title>Hello</Card.Title>
           <Card.Text>
+            Hello
           </Card.Text>
-          <Button variant="primary">Placeholder</Button>
+          <Button variant="primary">Go somewhere</Button>
         </Card.Body>
       </Card>
-    </div>
+    </div >
   )
 };
