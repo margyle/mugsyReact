@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar'
 import { Buttons } from '../button/Button';
 import { Lander } from '../../views/lander/Lander'
@@ -14,12 +14,15 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../../../assets/styles/global.scss';
 import styles from './defaultContainer.module.scss';
+// import { MugsyRouter } from '../config/Router'
+
 
 
 export const DefaultContainer: React.FC = () => {
   return (
     <div>
       <Container fluid>
+
         <Row>
           <Navbar expand={false}>
             <Container fluid>
