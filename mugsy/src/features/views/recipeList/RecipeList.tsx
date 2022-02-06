@@ -6,8 +6,6 @@ import styles from './landerCard.module.scss';
 export const RecipeList: React.FC = () => {
   return (
     <div>
-      Foo
-      {console.log('recipelist firing')}
     </div >
   )
 };

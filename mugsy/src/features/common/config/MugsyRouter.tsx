@@ -12,10 +12,9 @@ import { RecipeList } from '../../views/recipeList/RecipeList'
 
 export const MugsyRouter: React.FC = () => {
   return (
-
-    <div>
-      <Routes>
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/lander" element={<Lander />} />
+      <Route path="/recipe-list" element={<RecipeList />} />
+    </Routes>
   )
 };
