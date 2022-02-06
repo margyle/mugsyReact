@@ -19,7 +19,7 @@ export const RecipeList: React.FC = () => {
         console.log(listItem)
       }
       );
-      return populatedRecipeList;
+      // return populatedRecipeList;
     }
     else {
       console.log('undefined');
@@ -35,7 +35,7 @@ export const RecipeList: React.FC = () => {
   return (
     <div>
       <Container>
-        {populatedRecipeList}
+        {/* <div>{recipeList}</div> */}
       </Container>
     </div>
   )
