@@ -8,6 +8,7 @@ import {
 import React from 'react';
 import { Lander } from '../../views/lander/Lander';
 import { RecipeList } from '../../views/recipeList/RecipeList'
+import { RecipeBuilder } from '../../views/recipeBuilder/RecipeBuilder'
 
 
 export const MugsyRouter: React.FC = () => {
@@ -15,6 +16,7 @@ export const MugsyRouter: React.FC = () => {
     <Routes>
       <Route path="/lander" element={<Lander />} />
       <Route path="/recipe-list" element={<RecipeList />} />
+      <Route path="/recipe-builder" element={<RecipeBuilder />} />
     </Routes>
   )
 };

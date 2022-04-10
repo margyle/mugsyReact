@@ -1,10 +1,37 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { RootState } from '../../../app/store';
 import { IRecipesListState, IRecipeListItem } from './recipeListTypes';
 
+// initialState should be undefined in prod, currently populated to simplify layout dev
 const initialState: IRecipesListState = {
-  value: undefined,
+  value:
+    [
+      {
+        recipeId: 1,
+        recipeSource: 'margyle1',
+        weight: '32g',
+        waterAmount: '250ml',
+        waterTemp: '200',
+        brewTime: '3:30',
+      },
+      {
+        recipeId: 2,
+        recipeSource: 'margyle2',
+        weight: '33g',
+        waterAmount: '240ml',
+        waterTemp: '198',
+        brewTime: '3:15',
+      }
+    ]
 };
+
+// export const getLocationContactsAsync = createAsyncThunk(
+//   'recipes/get',
+//   async (locationId: string) => {
+//     const response = await getRecipeList(userId);
+//     return response.data;
+//   },
+// );
 
 export const recipesListSlice = createSlice({
   name: 'recipesList',
