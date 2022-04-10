@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+
+//update button scss to be actual variants to cover active states
+
+.brewSectionSelector {
+  padding-top: 20px;
+}
+
+.startButton {
+  @extend .shadow;
+  background-color: #f26d7d;
+  border-color: rgb(172, 172, 172, .5);
+  color: white;
+}
+
+.pourButton {
+  @extend .shadow;
+  background-color: #f26d7d;
+  border-color: rgb(172, 172, 172, .5);
+  color: white;
+}
+
+.endButton {
+  @extend .shadow;
+  background-color: #f26d7d;
+  border-color: rgb(172, 172, 172, .5);
+  color: white;
+}
